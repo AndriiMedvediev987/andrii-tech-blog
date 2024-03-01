@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Why MVC is so important",
+        "text": "MVC allows developers to maintain a true separation of concerns, devising their code between the Model layer for data, the VIEW layer for design, and the Controller laye for applicatioin logic.",
+        "post_date" : "2024-02-29"
+    },
+    {
+        "title": "Object-Relational Mapping",
+        "text": "I have really learning about ORMs. It's really simplified the way I create queries in SQL!",
+        "post_date" : "2024-01-29"
+    },
+    {
+        "title": "MVC vs MVVM - Difference Between Them",
+        "text": "MVC framework is an architectural pattern that separates an application into three main logical components Model, View, and Controller.",
+        "text1": "MVC framework is an architectural pattern that separates an application into three main logical components Model, View, and Controller. On the other hand, MVVM facilitates a separation of development of the graphical user interface with the help of mark-up language or GUI code.",
+        "post_date" : "2024-02-14"
+    },
+    {
+        "title": "SQL Server, PostgreSQL, MySQL",
+        "text": "PostgreSQL, MySQL, and SQLite use very similar syntax, with some notable differences highlighted below. Microsoft SQL Server has the greatest contrast in SQL syntax, as well as a wide variety of functions not available in other platforms.",
+        "text1": "PostgreSQL, MySQL, and SQLite use very similar syntax, with some notable differences highlighted below. Microsoft SQL Server has the greatest contrast in SQL syntax, as well as a wide variety of functions not available in other platforms. The table below highlights some examples of basic differences between SQL platforms.",
+        "post_date" : "2024-02-10"
+    },
+    {
+        "title": "What is Handlebars?",
+        "text": "Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions.",
+        "post_date" : "2024-02-29"
+    }
+]
