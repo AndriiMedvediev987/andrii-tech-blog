@@ -1,0 +1,22 @@
+{{!-- Home page with all blogs --}}
+{{#each blogs as |blog| }}
+<section class="card post-card">
+  <div class="row mb-2 card-header">
+    <div class="col-md-6">
+      <h2>
+        <a href="/post/{{blog.id}}">{{blog.title}}</a>
+      </h2>
+    </div>
+    <div class="col-md-6 end-align">
+      <p>Created by {{blog.user.name}} on {{format_date blog.post_date}}</p>
+    </div>
+  </div>
+  <div class="row mb-4 card-body">
+    <div class="col-md-12">
+      <p>
+        {{blog.text}}
+      </p>
+    </div>
+  </div>
+</section>
+{{/each}}

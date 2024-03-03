@@ -1,26 +1,26 @@
 [
     {
         "text": "Awersome post.",
-        "post_date" : "2024-01-02"
+        "comment_date" : "2024-01-02"
     },
     {
         "text": "This is a very useful article.",
-        "post_date" : "2024-01-11"
+        "comment_date" : "2024-01-11"
     },
     {
         "text": "I'm afraid I have to disagree with the author's meaning.",
-        "post_date" : "2024-01-22"
+        "comment_date" : "2024-01-22"
     },
     {
         "text": "I think it is too complicated for me.",
-        "post_date" : "2024-02-01"
+        "comment_date" : "2024-02-01"
     },
     {
         "text": "This is a very nice try but it lacks some details.",
-        "post_date" : "2024-02-08"
+        "comment_date" : "2024-02-08"
     },
     {
         "text": "I don't even know what to say, it is so boring.",
-        "post_date" : "2024-02-14"
+        "comment_date" : "2024-02-14"
     }
 ]

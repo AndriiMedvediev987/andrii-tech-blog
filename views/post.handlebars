@@ -1,0 +1,58 @@
+{{!-- Single post with comments --}}
+<section class="card post-card">
+    <div class="row mb-2 card-header">
+        <div class="col-md-6">
+            <h2>
+                <a href="/post/{{blog.id}}">{{blog.title}}</a>
+            </h2>
+        </div>
+        <div class="col-md-6 end-align">
+            <p>Created by {{blog.user.name}} on {{format_date blog.post_date}}</p>
+        </div>
+    </div>
+    <div class="row mb-4 card-body">
+        <div class="col-md-12">
+            <p>
+                {{blog.text}}
+            </p>
+        </div>
+    </div>
+</section>
+{{#each blog.comments as |comment| }}
+<section class="card comment-card">
+    <div class="row mb-2 card-header">
+        <div class="col-md-6">
+            <h5>
+                {{comment.text}}
+            </h5>
+        </div>
+        <div class="col-md-6 end-align">
+            <p>{{comment.user.email}}, {{format_date comment.comment_date}}</p>
+        </div>
+    </div>
+    <div class="row mb-4 blog">
+        <div class="col-md-7">
+            <p>
+                {{blog.text}}
+            </p>
+        </div>
+    </div>
+</section>
+{{/each}}
+<section class="card comment-card">
+    <div class="row mb-4 card-body">
+        <div class="col-md-12">
+            <form class="form new-comment-form">
+                <div class="form-group">
+                    <label for="comment-name">Comment</label>
+                    <input class="form-input" type="text" id="comment-text" name="comment-text" />
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script src="../js/post.js"></script>

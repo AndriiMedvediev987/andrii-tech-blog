@@ -1,0 +1,35 @@
+{{!-- Dashboard contains all blogs related to the signed user and with new post button --}}
+<div class="row">
+  <div class="col-auto">
+    <h2>Your Dashboard</h2>
+  </div>
+</div>
+{{#each blogs as |blog| }}
+<section class="card post-card">
+  <div class="row mb-2 card-header">
+    <div class="col-md-6">
+      <h2>
+        <a href="/post/{{blog.id}}">{{blog.title}}</a>
+      </h2>
+      {{!-- <p>Created by {{blog.user.name}} on {{format_date blog.post_date}}</p> --}}
+    </div>
+    <div class="col-md-6 end-align">
+      <p>Created by {{blog.user.name}} on {{format_date blog.post_date}}</p>
+    </div>
+  </div>
+  <div class="row mb-4 card-body">
+    <div class="col-md-12">
+      <p>
+        {{blog.text}}
+      </p>
+    </div>
+  </div>
+</section>
+{{/each}}
+<div class="row mb-4 card-body">
+  <div class="col-md-12">
+    <button id="new-post" type="button" class="btn btn-primary new-post">+ New Post</button>
+  </div>
+</div>
+
+<script src="./js/dashboard.js"></script>

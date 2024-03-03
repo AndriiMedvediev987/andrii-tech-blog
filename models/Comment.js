@@ -16,14 +16,10 @@ Comment.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    post_date: {
+    comment_date: {
       type: DataTypes.DATE,
       allowNull: false,
     },
-    // modification_date: {
-    //   type: DataTypes.DATE,
-    //   allowNull: false,
-    // },
     blog_id: {
       type: DataTypes.INTEGER,
       references: {
