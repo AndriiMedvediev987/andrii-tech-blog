@@ -6,7 +6,13 @@ const blogData = require("./blogData.json");
 const commentData = require("./commentData.json");
 //seed DB with users, blogs and comments.
 const seedDatabase = async () => {
-  await sequelize.sync({ force: true });
+  try
+  {
+    await sequelize.sync({ force: true });
+  }
+  catch(err){
+    console.log(err);
+  }
 
   const users = await User.bulkCreate(userData, {
     individualHooks: true,

@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 //start session with 1 day limit data storage
 const sess = {
-    secret: process.env.SS_SECRET,
+    secret: 'SUPER SECRET',//process.env.SS_SECRET,
     cookie: {
         maxAge: 24 * 60 * 60 * 1000,
     },
@@ -38,4 +38,4 @@ app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(PORT, () => console.log('Now listening'));
-});
+}).catch(err=> console.log('error has occured ' + err));;
